@@ -1,0 +1,767 @@
+/*
+TABLE OF CONTENTS
+-----------------
+
+I     CSS RESET
+II    KASON'S TEMPLATE STYLES
+III   GLOBAL ARTICLE STYLES
+IV    CONTENT HEADER
+V     CONTENT WELL
+VI    STORY HEAD, BYLINES AND INTRO
+VII   SIDE BLOCKS AND INLINE BLOCKS
+VIII  IMAGE, WIDE, FULL AND INLINE BLOCKS
+IX    PULLQUOTES
+X     NDN EMBEDS
+XI    YOUTUBE EMBEDS
+XII   RELATED LINKS AND FACT BOXES 
+XIII  BREAKOUT BOXES
+XIV   SLIDESHOWS
+XV    CREDIT LINKS
+XVI   MORE LINKS
+XVII  DROP DOWN BULLETS
+XVIII SOCIAL SHARING AND COMMENTS
+XIX   ADS
+
+FREQUENTLY USED COLORS 
+----------------------
+
+WARM GREY: #CECDC6, rgb(206,205,198); borders
+LINK BLUE: #5CA3E6, rgb(92,163,230);
+DARK GREY: #797470, rgb(121,116,112);
+WARM BLACK: #3D3D3D, rgb(61,61,61); display type
+*/
+
+
+
+
+
+
+
+
+
+/*
+-------------------------------------------
+V. CONTENT WELL
+-------------------------------------------
+*/
+
+.contentWell {
+  width: 100%;
+}
+.contentWell p {
+  max-width: 80%;
+}
+
+.bg-image {
+    max-width: 100%;
+    height: 100vh;
+        background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  position: relative;
+}
+
+.bg-image.main {
+    background-image: url(../images/image03.jpg);
+  margin-bottom: 6em;
+}
+
+.bg-image.second,
+.bg-image.third,
+.bg-image.fourth {
+    margin: 6em auto;
+}
+
+.bg-image.second {
+  background-image: url(../images/image06.jpg);
+}
+
+.bg-image.third {
+  background-image: url(../images/image01.jpg);
+}
+
+.bg-image.fourth {
+  background-image: url(../images/image08.jpg);
+}
+
+strong {
+  font-family: 'Lato';
+  font-weight: 700;
+  margin-right: .4em;
+  color: #fff;
+}
+
+
+
+.ap {
+  color: #7699ea;
+/*  padding: .1em .6em;*/
+}
+
+.jo {
+  color: #cc926a;
+/*  padding: .1em .6em;*/
+}
+
+/*
+-------------------------------------------
+VI. STORY HEAD, BYLINES AND INTRO
+-------------------------------------------
+*/
+
+.dropcap {
+  color: #cc926a;
+  float:left;
+  font-size: 20rem;
+  line-height: 16rem;
+  margin: 0rem .5rem 0 0;
+  padding-top: 0rem;
+  font-family: 'Lato';
+  font-weight: 900;
+  text-align: left;
+}
+
+.intro {
+  width: 70%;
+}
+
+#storyHead {
+  margin: 0 auto 2.4rem auto;
+  text-align: center;
+  color: #fff;
+  font-family: 'Lato';
+  font-weight: 100;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .4);
+  padding: 2em;
+  width: 90%;
+  text-transform: uppercase;
+}
+
+#storyHead h1 {
+  font-size: 7rem;
+  letter-spacing: -.4rem;
+  line-height: 6rem;
+  margin-bottom: 1.8rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto 3rem;
+}
+
+h3 {
+/*  background-color: #fff;*/
+/*  color: rgb(61,61,61);*/
+  color: #fff;
+width: 60%;
+  margin: 0 auto;
+  padding: .2em;
+  text-align: center;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 700;
+/*  float: right;*/
+}
+
+
+@media screen and (min-width: 900px) {
+  #storyHead {
+  margin: 0 auto 2.4rem auto;
+  text-align: right;
+  color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 5vw;
+    background-color: transparent;
+  }
+  #storyHead h1 {
+  font-size: 10.5rem;
+    line-height: 9rem;
+/*
+  letter-spacing: -.2rem;
+  line-height: 7.6rem;
+  margin-bottom: 1.8rem;
+*/
+}
+  #storyHead h3 {
+    text-align: right;
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: .8rem;
+  }
+}
+
+
+
+
+
+/*
+-------------------------------------------
+VII. SIDE BLOCKS & INLINE BLOCKS
+-------------------------------------------
+*/
+
+.inlineBlock {
+  max-width: 80%;
+  width: 100%;
+  margin: 4.8rem auto;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.rightBlock {
+  float: right;
+  margin: 2em 0 0;
+}
+.leftBlock {
+  float: left;
+  margin: 2em 0 0;
+}
+
+
+/*
+-------------------------------------------
+VIII. IMAGE, WIDE, FULL AND INLINE BLOCKS
+-------------------------------------------
+*/
+
+/*
+-------------------------------------------
+IX. PULLQUOTES
+-------------------------------------------
+*/
+
+.pullquote {
+  border-top: 1px solid #CECDC6;
+  border-bottom: 1px solid #CECDC6;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  padding: 2.4rem 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  
+}
+
+
+.pullquote blockquote {
+  margin: 0 auto 1rem;
+  font-family: Merriweather, Georgia, Times, serif;
+  max-width: 90%;
+  
+  
+/*  color: #3D3D3D;*/
+}
+.pullquote p.attribution {
+  font-family: 'Open Sans', Arial, sans-serif;
+/*  color: #797470;*/
+  max-width: none;
+  text-align: center;
+}
+.pullquote p.attribution:before {
+  content: '';
+}
+
+.pullquote.black {
+  color: #000;
+  margin-top: 1em;
+}
+
+@media (min-width: 900px) {
+  .pullquote {
+    background-color: transparent;
+      font-size: 2rem;
+  line-height: 4rem;
+  }
+  
+  .pullquote blockquote,
+  .pullquote p.attribution {
+    color: #fff;
+    max-width: 80%;
+  }
+  
+  .pullquote.rightBlock {
+    right: 0;
+    bottom: 20vh;
+    width: 300px;
+  }
+  
+}
+
+@media (min-width: 1000px) {
+  .pullquote {
+        font-size: 2.4rem;
+  line-height: 4.8rem;
+  } 
+}
+
+
+@media (max-width: 600px) {
+  .pullquote {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+
+/*
+-------------------------------------------
+X. NDN EMBEDS
+-------------------------------------------
+*/
+
+.ndn_embed {
+  margin: 4.8rem auto;
+  max-width: 650px;
+  min-height: 170px;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+.ndn_embed p {
+  font-family: Arial, sans-serif !important;
+}
+
+
+/*
+-------------------------------------------
+XI. YOUTUBE EMBEDS
+-------------------------------------------
+*/
+
+.videoBlock {
+  width:100%;
+  max-width: 650px;
+  margin: 4.8rem auto;
+}
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe, .videoWrapper embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+-------------------------------------------
+XII. RELATED LINKS AND FACT BOXES
+-------------------------------------------
+*/
+
+.relatedLinks a {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;  
+  margin-bottom: 1.8rem;
+}
+.relatedLinks a:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 740px) {
+  .relatedLinks, .factBox {
+    border-bottom: 1px solid #CECDC6;
+    border-top: 1px solid #CECDC6;
+    padding: 2.4rem 0;    
+  }
+}
+
+
+/*
+-------------------------------------------
+XIII. BREAKOUT MODULES
+-------------------------------------------
+*/
+
+.breakoutModule {
+  margin: 4.8rem auto;
+  width: 100%;
+}
+.breakoutModule h5 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+.breakoutModule img {
+  margin-bottom: .3rem;
+  width: 100%;
+}
+.breakoutModule p {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+.breakoutBox {
+  float: left;
+  margin-right: 2%;
+}
+.breakoutBox:last-child {
+  margin-right: 0;
+}
+.twoAcross .breakoutBox {
+  width: 49%;
+}
+.threeAcross .breakoutBox {
+  width: 32%;
+}
+.fourAcross .breakoutBox {
+  width: 23.5%;
+}
+
+@media (max-width: 740px) {
+  .breakoutModule {
+    border-bottom: 1px solid #CECDC6;
+    border-top: 1px solid #CECDC6;
+    margin: 4.8rem auto;
+    padding: 2.4rem 0;
+  }
+  .breakoutModule img {
+    float: left;
+    margin-right: 1rem;
+    width: 50%;
+  }
+  .twoAcross .breakoutBox, .threeAcross .breakoutBox, .fourAcross .breakoutBox {
+    margin-bottom: 1.2rem;
+    float: none;
+    width: 100%;
+  }
+  .breakoutBox:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*
+-------------------------------------------
+XIV. SLIDESHOWS
+-------------------------------------------
+*/
+
+
+.slideshow {
+  margin: 4.8rem auto;
+  max-width: 1400px;
+}
+.slideshow h5 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #797470;
+}
+.slideContainer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.slide {
+  float: left;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  width: 100%;
+}
+.slide .cutline {
+  max-width: none;
+}
+.slideButton {
+  background-color: white;
+  cursor: pointer;
+  display: block;
+  height: 5rem;
+  opacity: .8;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: opacity .3s ease-out;
+  -moz-transition: opacity .3s ease-out;
+  -o-transition: opacity .3s ease-out;
+  transition: opacity .3s ease-out;
+  width: 5rem;
+}
+.slideButton:hover {
+  opacity: 1;
+}
+.nextButton {
+  right: 0;
+}
+.slide img {
+  width: 100%;
+}
+.current {
+  margin-left: 0;
+  opacity: 1;
+  position: relative;
+}
+.preSlide {
+  margin-left: 100%;
+  opacity: 1;
+}
+.postSlide {
+  margin-left: -100%;
+  opacity: 0;
+}
+
+@media (max-width: 600px) {
+  .slideButton {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+
+/*
+-------------------------------------------
+XV. CREDIT LINKS
+-------------------------------------------
+*/
+
+.credits {
+  border-bottom: 1px solid #CECDC6;
+  margin: 6rem auto 0;
+  max-width: 650px;
+  padding-bottom: 2.4rem;
+}
+.credits p {
+  display: block;
+  float: left;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin: 0 2rem 0rem 0;
+}
+.credits a {
+  color: #3d3d3d;
+  font-weight: bold;
+}
+
+/*
+-------------------------------------------
+XVI. MORE LINKS
+-------------------------------------------
+*/
+
+.more {
+  border-bottom: 1px solid #CECDC6;
+  margin: 4.8rem auto 6rem;
+  max-width: 650px;
+  padding-bottom: 2.4rem;
+}
+.more h5, .more p, .more a {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+.more h5 {
+  font-weight: bold;
+  margin-bottom: 2.4rem;
+}
+.more a {
+  color: #3d3d3d;
+  display: block;
+  float: left;
+  margin-right: 5%;
+  width: 30%;
+}
+.more a:hover {
+  text-decoration: none;
+}
+.more a:last-child {
+  margin-right: 0;
+}
+.more a img {
+  margin-bottom: .3rem;
+  width: 100%;
+}
+.more a p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  font-weight: normal;
+}
+
+@media (max-width: 600px) {
+  .more a {
+    float: none;
+    margin: 0 0 2.4rem; 
+    width: 100%;
+  }
+  .more a img {
+    float: left;
+    width: 33%;  
+  }
+  .more a h6, .more a p {
+    float: right;
+    width: 65%;
+  }
+  .more a h6 {
+    margin-top: -.3rem;
+  }
+}
+
+/*
+-------------------------------------------
+XVII. DROP DOWN LIST
+-------------------------------------------
+*/
+
+.fa-twitter{
+  color: #5CA3E6;
+  cursor: pointer;
+  transition: color .25s ease-out;
+}
+.dropList .dropHed {
+  cursor: pointer;
+}
+.dropList .dropItem {
+  background-color: rgb(240,240,240);
+  border-radius: 2px;
+  margin-bottom: .6rem;
+  padding: 1rem;
+}
+.dropList .dropHed span.cardinal {
+  background-color: #A8A8A8;
+  border-radius: 50%;
+  color: white;
+  float: left;
+  font-size: 1.8rem;
+  height: 2.4rem;
+  letter-spacing: -1px;
+  line-height: 2.2rem;
+  margin-right: 1rem;
+  text-align: center;
+  text-indent: -1px;
+  width: 2.4rem;
+}
+.dropList .dropHed h5 {
+  float: left;
+  margin-bottom: 0;
+  width: calc(100% - 7rem);
+}
+.dropList .dropHed .fa{
+  color: #5CA3E6;
+  float: right;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  margin:0 1rem;
+}
+.dropList .dropText {
+  display: none;
+  padding: 1rem 4rem 1rem 3.4rem;
+}
+.dropList .expandedText {
+  display: block;
+}
+.dropList p.dropText {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+/*
+-------------------------------------------
+XVIII. SYNOPSIS BOXES
+-------------------------------------------
+*/
+
+.synopsis {
+  border-bottom: 1px solid #CECDC6;
+  padding-bottom: 2.4rem;
+}
+
+.synopsis h6 {
+  margin-bottom: .9rem;
+  font-weight: bold;
+  color: #3d3d3d;
+  text-transform: uppercase;
+}
+.synopsis p {
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin-bottom: .9rem;
+  color: #797470;
+  cursor: pointer;
+}
+
+
+/*
+-------------------------------------------
+XIX. SOCIAL SHARING AND COMMENTS
+-------------------------------------------
+*/
+
+.shareComments {
+  margin: 4.8rem auto;
+  max-width: 65rem;
+}
+.shareCommentsTop {
+  max-width: none;
+  width: auto;
+}
+.shareCommentsTop table {
+  margin: 0 auto;
+}
+
+.gig-counter {
+  margin-top: 6px !important;
+}
+.gig-bar-container img {
+  margin-right: .5rem;
+  width: 9rem;
+}
+#comments {
+  margin-top: 4.8rem;
+}
+
+@media (max-width: 860px) {
+  .shareComments {
+    margin: 2.4rem auto 4.8rem;
+  }
+  .shareCommentsTop {
+    max-width: 46rem;
+  }
+  .gig-bar-container img {
+    width: 65px;
+    margin-right: 0;
+  }
+}
+
+/*
+-------------------------------------------
+XX. ADS
+-------------------------------------------
+*/
+
+.ad {
+  border-bottom: 1px solid #c8c8c8;
+  border-top: 1px solid #c8c8c8;
+  margin: 4.8rem 0;
+  padding: 2rem 0;
+  position: relative;
+  text-align: center;
+  z-index: 0; }
+
+.noRule {
+  border-bottom: none !important;
+  border-top: none !important; }
+
+.ad * {
+  margin: 0 auto !important; }
+
+.ad p {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: .5rem !important; }
