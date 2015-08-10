@@ -62,6 +62,13 @@ V. CONTENT WELL
   position: relative;
 }
 
+@media (max-width: 900px) {
+  .bg-image {
+    background-attachment: scroll;
+  }
+}
+
+
 .bg-image.main {
     background-image: url(../images/image03.jpg);
   margin-bottom: 6em;
