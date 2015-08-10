@@ -65,6 +65,8 @@ V. CONTENT WELL
 @media (max-width: 900px) {
   .bg-image {
     background-attachment: scroll;
+    overflow: hidden;
+  }
   }
 }
 
