@@ -60,6 +60,7 @@ V. CONTENT WELL
     background-size: cover;
     background-position: center;
   position: static;
+  top: 0;
 }
 
 @media (max-width: 900px) {
