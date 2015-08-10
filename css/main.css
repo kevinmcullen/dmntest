@@ -59,17 +59,16 @@ V. CONTENT WELL
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  position: static;
-  top: 0;
+  position: relative;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .bg-image {
     background-attachment: scroll;
     overflow: hidden;
   }
   }
-}
+
 
 
 .bg-image.main {
