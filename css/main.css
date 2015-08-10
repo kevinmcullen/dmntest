@@ -59,7 +59,7 @@ V. CONTENT WELL
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  position: relative;
+  position: static;
 }
 
 @media (max-width: 900px) {
