@@ -63,7 +63,7 @@ V. CONTENT WELL
   position: relative;
 }
 
-@media (max-device-width: 1024px) {
+@media screen and (max-device-width: 1024px) {
   .bg-image {
     background-attachment: scroll;
     overflow: hidden;
