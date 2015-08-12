@@ -47,6 +47,7 @@ V. CONTENT WELL
 
 .contentWell {
   width: 100%;
+  
 }
 .contentWell p {
   max-width: 80%;
@@ -62,7 +63,7 @@ V. CONTENT WELL
   position: relative;
 }
 
-@media (max-width: 1024px) {
+@media (max-device-width: 1024px) {
   .bg-image {
     background-attachment: scroll;
     overflow: hidden;
